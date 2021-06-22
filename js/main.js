@@ -9,10 +9,10 @@ const title = document.querySelector("#title");
 const cover = document.querySelector("#cover");
 
 // songs
-const songs = ["Episode_001 - Perthes Disease"];
+const songs = ["Episode_001 - Perthes Disease", "Episode_002 - Reye's Syndrome"];
 
 // keep track of songs
-let songIndex = 0;
+let songIndex = 1;
 
 // Initially load song in DOM
 loadSong(songs[songIndex]);
