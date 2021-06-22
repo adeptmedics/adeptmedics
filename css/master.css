@@ -194,3 +194,13 @@ ul {
   width: 0%;
   transition: width 0.1s linear;
 }
+
+@media (max-width: 720px) {
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .podcasts {
+    height: 60vh;
+  }
+}
