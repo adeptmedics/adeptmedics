@@ -9,66 +9,227 @@
     <script src="https://kit.fontawesome.com/eb6186f681.js"></script>
 
     <!-- CSS Import -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/master.css" />
 
     <!-- Title -->
-    <title>Adept Medics | Home</title>
+    <title>Adept Medics</title>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light navbar-light">
       <div class="container">
-        <h1 class="logo">
-          <a href="index.html"
-            ><img src="images/adept-medics-logo.png" alt=""
-          /></a>
-        </h1>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <!-- <a href="index.html" class="navbar-brand"><h1><span class="text-primary">Adept <span class="text-danger">Medics</span></span></h1> -->
+          <img src="images/adept-medics-logo.png" alt="Adept Medics"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#podcasts" class="nav-link h6">Podcasts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructor" class="nav-link h6">Instructor</a>
+            </li>
+            <li class="nav-item">
+              <a href="#faq" class="nav-link h6">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link h6">Connect</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="podcasts">
-      <div class="podcast-list">
-        <h2>Episode 1&emsp;Perthes Disease</h2>
-        <h2>Episode 2&emsp;Reye's Syndrome</h2>
-      </div>
-
-      <div class="music-container">
-        <div class="music-info">
-          <h4 id="title">Episode_001 - Perthes Disease</h4>
-          <div class="progress-container">
-            <div class="progress"></div>
-          </div>
+    <!-- Showcase -->
+    <section class="bg-light text-dark p-5 text-center text-md-start">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <div class="container">
+                    <h1><strong>Welcome to <span class="text-primary">Adept <span class="text-danger">Medics</span></span></strong></h1>
+                    <p class="lead my-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia vero consequuntur numquam quae nostrum aliquam reprehenderit quos aspernatur, error deserunt enim qui dolores voluptate deleniti voluptas ut amet. Nemo in deleniti molestias iste similique autem dolorum hic nulla laudantium.
+                    </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Enroll for more Info</button>
+                </div>
+                <img class="img-fluid d-none d-md-block" src="images/showcase-img.jpg" alt="Show case Image">
+            </div>
         </div>
+    </section>
 
-        <audio src="audio/Episode_001 - Perthes Disease.mp3" id="audio"></audio>
-        <div class="img-container">
-          <img
-            src="images/Logo.jpg"
-            alt="Episode_001 - Perthes Disease"
-            id="cover"
-          />
+    <!-- Newsletter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 md-md-0">Sign Up For Our Newsletter</h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <button class="btn btn-dark btn-lg" type="button" id="btnNewsletter">Sign Up</button>
+                  </div>
+            </div>
         </div>
+    </section>
 
-        <div class="navigation">
-          <button id="prev" class="action-btn">
-            <i class="fas fa-backward"></i>
-          </button>
-          <button id="play" class="action-btn action-btn-big">
-            <i class="fas fa-play"></i>
-          </button>
-          <button id="next" class="action-btn">
-            <i class="fas fa-forward"></i>
-          </button>
+    <!-- Podcasts -->
+    <section id="podcasts" class="p-5">
+        <div class="container">
+            <div class="row text-center g-5 px-4">
+                <h2 class="pb-4"><strong>Listen To Our Podcasts</strong></h2>
+                <div class="col-md">
+                    <div class="card bg-light text-dark">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="fas fa-file-prescription"></i>
+                            </div>
+                            <audio controls controlsList="nodownload">
+                                <source src="audio/Episode_001 - Perthes Disease.mp3"></source src>
+                            </audio>
+                            <h5 class="card-title mb-3">
+                                Episode_001 - Perthes Disease
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsum!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="fas fa-file-prescription"></i>
+                            </div>
+                            <audio controls class="" controlsList="nodownload">
+                                <source src="audio/Episode_002 - Reye's Syndrome.mp3"></source src>
+                            </audio>
+                            <h5 class="card-title mb-3">
+                                Episode_002 - Reye's Syndrome
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsum!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <hr>
+
+    <!-- Instructor -->
+    <section class="p-5" id="instructor">
+        <div class="container text-center text-md-start">
+            <h1 class="text-center p-4"><strong>Instructor</strong></h1>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="images/Raymond.jpg" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="col-md p-5">
+                    <h2></h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores recusandae, maiores tempora fuga laborum quam sequi mollitia. Mollitia recusandae voluptatum laudantium ipsa doloribus, quae a aperiam repellendus consectetur beatae vitae amet, ratione deserunt asperiores sed nobis aliquid, illo ab tempore similique earum blanditiis modi aut delectus? Aspernatur, suscipit animi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="p-5" id="faq">
+        <div class="container">
+            <h1 class="text-center p-4"><strong>Frequently Asked Question</strong></h1>
+            <!-- Question 1 -->
+            <div class="accordion accordion-flush" id="faqs">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                      Question 1
+                    </button>
+                  </h2>
+                  <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, error!</div>
+                  </div>
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="accordion accordion-flush" id="questions">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                      Question 2
+                    </button>
+                  </h2>
+                  <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vero vel veritatis minus suscipit voluptatibus!</div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TO DO : Team -->
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 | Adept Medics</p>
+            <a href="" class="position-absolute bottom-0 end-0 p-5">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel"><strong>Enroll For More Info</strong></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- <p class="lead">Fill out this form we'll get back to you.!</p> -->
+                <form action="" id="enroll-form">
+                    <div class="mb-3">
+                        <label for="firstName" class="call-form-label">First Name</label>
+                        <input type="text" id="firstName" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="call-form-label">Last Name</label>
+                        <input type="text" id="lastName" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="call-form-label">Email</label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="query" class="call-form-label">Query</label>
+                        <textarea type="text" id="query" class="form-control"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        </div>
     </div>
 
-    <!-- Script Import -->
+    <!-- JS Import -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
+
   </body>
 </html>
