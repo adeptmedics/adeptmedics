@@ -23,9 +23,9 @@
     height: 320px;
 }
 
-/* .lead {
-    text-align: justify;
-} */
+audio {
+    width: 100%;
+}
 
 @media(min-width: 768px) {
     .news-input {
