@@ -1,54 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #222;
+  text-decoration: none;
+  color: #222;
 }
 
 .nav-item a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.navbar .container img{
-    width: 300px;
-    height: 140px;
+.navbar .container img {
+  width: 300px;
+  height: 140px;
 }
 
 .welcomeTitle {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 #instructor img {
-    width: 320px;
-    height: 320px;
+  width: 320px;
+  height: 320px;
 }
 
 audio {
-    width: 100%;
+  width: 100%;
 }
 
 .contact-link li {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    /* border: 0px; */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  /* border: 0px; */
 }
 
-
-@media(min-width: 768px) {
-    .news-input {
-        width: 50%;
-    }
-   
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
 }
-
 
 @media (max-width: 768px) {
-    .no-mini-screen {
-        display: none;
-    }
+  .no-mini-screen {
+    display: none;
+  }
 }
